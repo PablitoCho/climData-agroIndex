@@ -1,5 +1,5 @@
 ##
- # FILE R_TAVnAMP.r
+ # FILE R_TAV-AMP.r
  # AUTHOR olivier crespo
  # DATE 2015  
  ###############################################################################
@@ -12,12 +12,10 @@
  # results confirmed in face of the tav_amp.exe dos application
  ###############################################################################
 
-# improve :
-# make a function that returns ONLY TAV and AMP
-
-##### agro_tavamp
-# input  : metD : climate data, formatted according to olivier
-# output : metD : climate data with updated TAV and AMP, formatted according to olivier
+#####
+# call    : metDout <- agro_tavamp(metDin)
+# metDin  : climate data, formatted according to olivier
+# metDout : climate data with updated TAV and AMP, formatted according to olivier
 ###############################################################################
 agro_tavamp <- function(metD)
 {
