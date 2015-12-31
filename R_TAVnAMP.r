@@ -11,8 +11,13 @@
  # http://www.apsim.info/Wiki/public/Upload/OtherProducts/tav_amp.pdf
  # results confirmed in face of the tav_amp.exe dos application
  ###############################################################################
- # input : metD : climate data, formatted according to olivier
- # output : climate data with updated TAV and AMP, formatted according to olivier
+
+# improve :
+# make a function that returns ONLY TAV and AMP
+
+##### agro_tavamp
+# input  : metD : climate data, formatted according to olivier
+# output : metD : climate data with updated TAV and AMP, formatted according to olivier
 ###############################################################################
 agro_tavamp <- function(metD)
 {
