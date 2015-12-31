@@ -1,18 +1,19 @@
 ##
- # FILE climAgro.r
+ # FILE R_TAVnAMP.r
  # AUTHOR olivier crespo
- # https://r-forge.r-project.org/projects/xpos-r/
+ # DATE 2015  
  ###############################################################################
-
-##
- # COMPUTE tav AND amp APSIM CONSTANTS
- # annual average ambient temperature (TAV)
- # annual amplitude in mean monthly temperature (AMP)
+ # Compute TAV and AMP constants used in crop models (eg. APSIM, DSSAT)
+ # TAV : annual average ambient temperature
+ # AMP : annual amplitude in mean monthly temperature
  ###############################################################################
  # > ref
  # http://www.apsim.info/Wiki/public/Upload/OtherProducts/tav_amp.pdf
  # results confirmed in face of the tav_amp.exe dos application
  ###############################################################################
+ # input : metD : climate data, formatted according to olivier
+ # output : climate data with updated TAV and AMP, formatted according to olivier
+###############################################################################
 agro_tavamp <- function(metD)
 {
 	# init
